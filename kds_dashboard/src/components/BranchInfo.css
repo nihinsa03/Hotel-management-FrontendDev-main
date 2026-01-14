@@ -1,0 +1,83 @@
+.branch-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid #000000;
+    width: 95%;  /* Adjusts the width dynamically */
+    max-width: 2000px; /* Limits max width for better UI */
+    margin: 0 auto; /* Centers the section */
+}
+
+.branch-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.branch-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.branch-info {
+    display: flex;
+    gap: 10px;
+}
+
+.branch-code, .department {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.branch-code span {
+    background: #1a1a1a;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.department span {
+    background: #ddd;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.order-status {
+    display: flex;
+    gap: 10px;
+}
+
+.status-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 80px;
+}
+
+.new { background-color: #a7ddfc; }
+.preparing { background-color: #f4b266; }
+.completed { background-color: #9de093; }
+.delay { background-color: #f26d6d; color: white; }
+
+.status-count {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.status-text {
+    font-size: 12px;
+}

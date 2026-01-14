@@ -1,0 +1,152 @@
+/* Top Navigation Bar */
+.top-nav {
+    position: absolute; /* Position at the top-right */
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Restaurant Name Selector */
+  .restaurant-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .rest-name-btn {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .restaurant-name {
+    background-color: #e0e0e0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: black;
+  }
+  
+  /* Notification Icon */
+  .notification-container {
+    position: relative;
+  }
+  
+  .notification-icon {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: blue;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  /* ✅ Responsive Design */
+  
+  /* Max-width: 1024px (Tablets and smaller laptops) */
+  @media (max-width: 1024px) {
+    .top-nav {
+      top: 10px;
+      right: 15px;
+    }
+  
+    .restaurant-selector {
+      gap: 8px;
+    }
+  
+    .rest-name-btn,
+    .restaurant-name {
+      font-size: 13px;
+      padding: 6px 10px;
+    }
+  
+    .notification-icon {
+      font-size: 18px;
+    }
+  
+    .notification-badge {
+      width: 16px;
+      height: 16px;
+      font-size: 11px;
+    }
+  }
+  
+  /* Max-width: 768px (Tablets and larger mobile devices) */
+  @media (max-width: 768px) {
+    .top-nav {
+      top: 8px;
+      right: 10px;
+    }
+  
+    .restaurant-selector {
+      gap: 6px;
+    }
+  
+    .rest-name-btn,
+    .restaurant-name {
+      font-size: 12px;
+      padding: 5px 8px;
+    }
+  
+    .notification-icon {
+      font-size: 16px;
+    }
+  
+    .notification-badge {
+      width: 14px;
+      height: 14px;
+      font-size: 10px;
+    }
+  }
+  
+  /* Max-width: 480px (Mobile devices) */
+  @media (max-width: 480px) {
+    .top-nav {
+      top: 5px;
+      right: 5px;
+      padding: 6px 8px;
+    }
+  
+    .restaurant-selector {
+      gap: 4px;
+    }
+  
+    .rest-name-btn,
+    .restaurant-name {
+      font-size: 11px;
+      padding: 4px 6px;
+    }
+  
+    .notification-icon {
+      font-size: 14px;
+    }
+  
+    .notification-badge {
+      width: 12px;
+      height: 12px;
+      font-size: 9px;
+    }
+  }
+  

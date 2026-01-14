@@ -1,2 +1,2 @@
-# Hotel-management-FrontendDev-main
-Hotel-management-FrontendDev-main
+# Hotel-management-FrontendDev
+This is vebusa Smart hotel management system repo

@@ -1,0 +1,129 @@
+/* Sidebar Container */
+.sidebar {
+    position: fixed;  /* Sticks sidebar to the left */
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #d3d3d3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px;  /* Remove rounding to fit the corner */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo and Header */
+  .sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-f {
+    height: 90px;
+    max-width: 100%;
+  }
+  
+  .vebusa {
+    color: #0044ff;
+    font-weight: bold;
+    font-size:18px;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  /* Navigation Menu */
+  .menu {
+    width: 100%;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;  /* Increased font size */
+    padding: 14px;  /* Increased padding for better spacing */
+    cursor: pointer;
+    color: black;
+    font-weight: 500; /* Bolder text */
+    
+  }
+  
+  
+  .menu li:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .menu .active {
+    color: #0044ff;
+    font-size: 25px;  /* Larger font for active menu */
+    font-weight: bold;
+  }
+  
+  /* ✅ Responsive Design */
+  
+  /* Max-width: 1024px (Tablets and smaller laptops) */
+  @media (max-width: 1024px) {
+    .sidebar {
+      width: 220px;
+    }
+  
+    .menu li {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  /* Max-width: 768px (Tablets and larger mobile devices) */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 180px;
+      padding: 15px;
+    }
+  
+    .menu li {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    .logo {
+      width: 50px;
+    }
+  }
+  
+  /* Max-width: 480px (Mobile devices) */
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 10px;
+    }
+  
+    .sidebar-header {
+      display: none;
+    }
+  
+    .menu ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .menu li {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }
+  
